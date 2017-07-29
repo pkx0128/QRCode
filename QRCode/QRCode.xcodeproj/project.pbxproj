@@ -12,6 +12,7 @@
 		4FD8723B1F2C2458001460FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD872391F2C2458001460FE /* LaunchScreen.storyboard */; };
 		4FD872431F2C2492001460FE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD872421F2C2492001460FE /* MainViewController.swift */; };
 		4FD872451F2C24BB001460FE /* SCanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD872441F2C24BB001460FE /* SCanViewController.swift */; };
+		4FD872471F2C3D0E001460FE /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD872461F2C3D0E001460FE /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4FD8723C1F2C2458001460FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FD872421F2C2492001460FE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4FD872441F2C24BB001460FE /* SCanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCanViewController.swift; sourceTree = "<group>"; };
+		4FD872461F2C3D0E001460FE /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				4FD872301F2C2458001460FE /* AppDelegate.swift */,
 				4FD872421F2C2492001460FE /* MainViewController.swift */,
 				4FD872441F2C24BB001460FE /* SCanViewController.swift */,
+				4FD872461F2C3D0E001460FE /* MessageView.swift */,
 				4FD872371F2C2458001460FE /* Assets.xcassets */,
 				4FD872391F2C2458001460FE /* LaunchScreen.storyboard */,
 				4FD8723C1F2C2458001460FE /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD872471F2C3D0E001460FE /* MessageView.swift in Sources */,
 				4FD872431F2C2492001460FE /* MainViewController.swift in Sources */,
 				4FD872311F2C2458001460FE /* AppDelegate.swift in Sources */,
 				4FD872451F2C24BB001460FE /* SCanViewController.swift in Sources */,

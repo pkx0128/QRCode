@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.white
         //创建按钮
         let bnt = UIButton(frame: CGRect(x: 0, y: 0, width: view.bounds.width / 2, height: 50))
         bnt.center = CGPoint(x: view.bounds.width / 2, y: view.bounds.height / 2)
