@@ -13,7 +13,31 @@ class SCanViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //获取系统视频捕捉硬件设备
+        let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        do{
+            //初始化视频捕设备
+            let input = try AVCaptureDeviceInput(device: device)
+            //初始化CaptureSessoin对象
+            let session = AVCaptureSession()
+            //给Session添加输入设备
+            session.addInput(input)
+            //初始化CaptureMetadataOutput对象
+            let output = AVCaptureMetadataOutput()
+            //给session添加输出
+            session.addOutput(output)
+            //设置视频捕捉图层
+            let preview = AVCaptureVideoPreviewLayer(session: session)
+            preview?.videoGravity = AVLayerVideoGravityResizeAspectFill
+            preview?.frame = view.bounds
+            view.layer.addSublayer(preview!)
+            //开始视频捕捉
+            session.startRunning()
+            
+        }catch {
+            print(error)
+        }
+        
         
     }
 
