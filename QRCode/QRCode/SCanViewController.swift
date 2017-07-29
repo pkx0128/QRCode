@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class SCanViewController: UIViewController {
+class SCanViewController: UIViewController ,AVCaptureMetadataOutputObjectsDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,10 @@ class SCanViewController: UIViewController {
             let output = AVCaptureMetadataOutput()
             //给session添加输出
             session.addOutput(output)
+            
+            output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+            output.metadataObjectTypes = [AVMetadataObjectTypeQRCode]
+            
             //设置视频捕捉图层
             let preview = AVCaptureVideoPreviewLayer(session: session)
             preview?.videoGravity = AVLayerVideoGravityResizeAspectFill
@@ -33,6 +37,8 @@ class SCanViewController: UIViewController {
             view.layer.addSublayer(preview!)
             //开始视频捕捉
             session.startRunning()
+            
+            
             
         }catch {
             print(error)
